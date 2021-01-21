@@ -32,43 +32,22 @@
     margin-right: auto;
     margin-left: auto;
 }	
-		
-label{
-  display: block;
-  cursor: pointer;
-  padding: 10px;
-  border: 1px solid #fff;
-  border-bottom: none;
+.pointer {
+    cursor: pointer;
 }
-		
-label:hover{
-  background: #033354;
+.pointer {
+    line-height: 1.4em;
+    padding-bottom: 15px;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-bottom-color: #E2E2E2;
 }
+.collapse { 
+border-bottom-style: solid;
+border-bottom-width: 1px;
+border-bottom-color: #E2E2E2;
+    }
 
-label.last{
-  border-bottom: 1px solid #fff;
-}
-input[type="checkbox"]{
-  position: absolute;
-  left: -9999px;
-}
-
-input[type="checkbox"] ~ ul{
-  height: 0;
-  transform: scaleY(0);
-}
-
-input[type="checkbox"]:checked ~ ul{
-  height: 100%;
-  transform-origin: top;
-  transition: transform .2s ease-out;
-  transform: scaleY(1); 
-}
-
-input[type="checkbox"]:checked + label{
-  background: #ffffff;
-  border-bottom: 1px solid #fff;
-}
 		
   </style>
 </head>
@@ -101,11 +80,17 @@ input[type="checkbox"]:checked + label{
 		  <div class="row">
 		  <div class="col-sm-3"></div>
 		  <div class="col-sm-2">
-			  <p>
-			  <input type="checkbox" id="list-item-1">
-    			<label for="list-item-1" class="first">I write</label>
-			While I do spend hours conducting clever text messages to my friends, I also do it for a living. And that's pretty cool.
-			  </p>
+			<p class="pointer" data-toggle="collapse" data-target="#USP1">
+                     <b>I write</b>
+                    </p>
+			  <div class="collapse in" id="USP1" aria-expanded="true" style="">
+                     <p>
+                         While I do spend hours conducting clever text messages to my friends, I also do it for a living. And that's pretty cool.
+                    </p>  
+			  </div>
+                   <br>
+                   <br>
+                    </div>
 			  </div>
 		  </div>
 		<div class="col-sm-2">
