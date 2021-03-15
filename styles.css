@@ -1,0 +1,91 @@
+h1 {
+    font-family: 'Questrial', sans-serif;
+          font-size: 40px;
+      padding-bottom: 10px;
+            padding-top: 30px;
+          } 
+        h2 {
+    font-family: 'Questrial', sans-serif;
+          font-size: 30px;
+      padding-bottom: 10px;
+          } 
+      p {
+    font-family: 'Questrial', sans-serif;
+      color: #000000;
+       font-size: 18px;
+          }
+  .header {
+        height: 100px;
+          }
+    .wwheader {
+        padding-right: 20px;
+        padding-left: 20px;
+        padding-top: 13px;
+        border-bottom: 1px solid black;
+              }
+
+  .container {
+      padding-right: 15px;
+      padding-left: 15px;
+      margin-right: auto;
+      margin-left: auto;
+  }	
+
+  .wwheadertext {
+    font-family: 'questrial';
+    font-weight: bold;
+    text-align: center;
+    font-size: 22px;
+      }
+
+    .wwcategory
+    {
+        font-family: 'questrial';
+        font-weight: 900;
+        text-align: center;
+        font-size: 65px;
+        padding-top: 14px;
+        padding-bottom: 14px;
+        padding-left: 90px;
+        font-weight: bold;
+          }
+
+          .wwsort
+          {
+              font-family: 'questrial';
+              font-size: 14px;
+              padding-left: 10px;
+              padding-top: 6px;
+                }
+
+                .col-sm-3
+                {
+                    padding-left: 1px;
+                    padding-right: 0px;
+                    margin-left: 0px;
+                    margin-right: 0px;
+                      }
+    .wwbrand
+    {
+    font-family: 'questrial';
+    font-size: 14px;
+    padding-left: 10px;
+    padding-top: 6px;
+    margin-bottom: 4px;
+    font-weight: bold;
+        }
+        .wwname
+        {
+        font-family: 'questrial';
+        font-size: 14px;
+        padding-left: 10px;
+        line-height: 1;
+        font-weight: bold;
+            }
+            .wwprice
+            {
+            font-family: 'questrial';
+            font-size: 14px;
+            padding-left: 10px;
+            padding-top: 4px;
+                }
