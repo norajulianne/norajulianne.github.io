@@ -93,14 +93,14 @@ h1 {
 {
 font-family: 'questrial';
 font-size: 30px;
-padding-top: 11px;
+padding-top: 10px;
 text-align: center;
             }
 
             .wwpages
             {
-                padding-top: 16px;
-                padding-bottom: 16px;
+                padding-top: 12px;
+                padding-bottom: 12px;
                 padding-left: 10px;
                 padding-right: 10px;
                 border-bottom: 1px solid black;
