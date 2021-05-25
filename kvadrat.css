@@ -108,3 +108,20 @@ h3 {
       border-bottom: solid 1px #b4b4b4;
       padding-top: 80px;
   }
+
+  a {
+      text-decoration: none;
+  }
+
+a:visited {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    color: black;
+}
+
+.button:hover {
+    background-color: #C6C6C6;
+}
