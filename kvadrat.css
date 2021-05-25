@@ -1,0 +1,110 @@
+
+
+body {
+    background-color: black;
+    color: white;
+    font-family: montserrat;
+}
+
+.container {
+    padding: 3%;
+}
+
+.container-cv {
+    padding: 10px;
+    text-align: left;
+}
+
+p, li {
+    color: #B4B4B4;
+    line-height: 1.8;
+}
+
+.textbox-about {
+    padding: 50px 7% 50px 7%;
+}
+
+.textbox-menu {
+    font-size: 12px;
+    text-align: left;
+    padding-top: 70px;
+}
+
+.button {
+    background-color: white;
+    color: black;
+    width: 150px;
+    height: 40;
+    border-radius: 30px;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.experience {
+    text-align: left;
+    border-bottom: #b4b4b4 solid 1px;
+    margin-bottom: 60px;
+    padding-bottom: 30px;
+    }
+
+#experience-title {
+letter-spacing: 5px;
+}
+
+h2 {
+    font-size: 30px;
+}
+
+h3 {
+    font-size: 22px;
+}
+
+.hero-cv {
+    background: url(https://i.postimg.cc/K8QHvZHh/hero-cv3.jpg) no-repeat;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+  }
+
+  .hero-about {
+    background: url(  https://i.postimg.cc/qqRzkTJ1/nora3.jpg) no-repeat;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+  }
+
+
+  .h1-sub {
+      text-align: center;
+      margin-top: 50px;
+      margin-bottom: 30px;
+  }
+
+.center {
+    text-align: center;
+}
+
+  h4 {
+      font-size: 16px;
+  }
+
+#time {
+      margin-top: 40px;
+      font-size: 12px;
+  }
+
+  #skills-category {
+      padding-bottom: 10px;
+      border-bottom: solid 1px #b4b4b4;
+      padding-top: 80px;
+  }
