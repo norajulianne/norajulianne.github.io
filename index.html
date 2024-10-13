@@ -101,22 +101,31 @@
             color: white;
         }
 
-
-        /* Video styling to fit 60% width and center */
-        .video-70-percent {
+        /* Video styling */
+        .video-container {
+            position: relative;
             width: 70%;
-            height: auto;
-            display: block;
-            object-fit: cover;
+            height: 0;
+            padding-bottom: 56.25%; /* 16:9 aspect ratio */
+            margin: 0 auto;
+        }
+
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
         }
 
         @media (max-width: 768px) {
-            .video-70-percent {
+            .video-container {
                 width: 100%;
+                padding-bottom: 56.25%; /* Keep 16:9 ratio */
             }
         }
 
-        .VHS {
+            .VHS {
             width: 70%;
             transition: width 0.3s ease;
             margin-top: 20px;
@@ -125,6 +134,8 @@
         .VHS:hover {
             width: 100%; /* Expands to 100% on hover */
         }
+
+    
 
     </style>
 </head>
@@ -141,14 +152,18 @@
         </div>
     </div>
 
+    <!-- Video Section with Vimeo Video -->
     <div class="row">
         <div class="col-12 d-flex justify-content-center">
-            <video autoplay muted loop class="video-70-percent">
-                <source src="TV med video 3.mp4" type="video/mp4">
-                Din webbläsare stödjer inte videon.
-            </video>
+            <div class="video-container">
+                <iframe src="https://player.vimeo.com/video/1019137631?autoplay=1&loop=1&muted=1&background=1" 
+                        frameborder="0" allow="autoplay; fullscreen; picture-in-picture" 
+                        title="TV">
+                </iframe>
+            </div>
         </div>
     </div>
+
 
     <!-- Page Content -->
      <div class="block">
