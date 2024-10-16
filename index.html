@@ -11,46 +11,42 @@
     <link href="https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap" rel="stylesheet">
     <style>
         /* Navigation bar styling */
-        .navbar {
+       .navbar {
             position: sticky;
             top: 0;
             background-color: white;
-            margin-left: 20px;
-            margin-right: 20px;
             display: flex;
-            align-items: center;
             justify-content: space-between;
-            padding: 15px 15px;
+            align-items: center;
+            padding: 5px 30px;
+            width: 100%;
             z-index: 1000;
         }
-
-        .navbar .logo img {
-            height: 20px;
-            max-width: 100%;
+        
+        .navbar .header-namn, .navbar .nav-links a {
+            font-size: 16px;
+            font-family: 'Helvetica neue', sans-serif;
+            color: black;
+            text-decoration: none;
+            padding: 10px 0;
         }
-
+        
         .navbar .nav-links {
             display: flex;
             gap: 30px;
-            font-size: 16px;
-            color: black;
         }
-
-        .navbar .nav-links a {
-            text-decoration: none;
-            color: black;
-            font-family: "Helvetica neue", sans-serif;
-        }
-
-        .navbar .nav-links a:hover {
-            text-decoration: underline;
-        }
-
+        
+        
         @media (max-width: 768px) {
             .navbar {
-                margin-left: 0;
-                margin-right: 0;
+                padding: 10px 20px;
             }
+            .navbar .header-namn, .navbar .nav-links a {
+                font-size: 14px;
+            }
+            .mobilpadding {
+                        padding-bottom: 10px;
+                    }
         }
 
         /* General styling */
@@ -142,12 +138,12 @@
 
     <!-- Navigation Bar -->
   <div class="navbar">
-        <p>Nora Lundberg</p>
-        <div class="nav-links">
-            <a href="om">Om</a>
-            <a href="https://noralundberg.se">Content</a>
-        </div>
+    <div class="header-namn">Nora Lundberg</div> <!-- Första delen -->
+    <div class="nav-links"> <!-- Länkarna -->
+        <a href="om.html">Om</a>
+        <a href="content.html">Content</a>
     </div>
+</div>
 
     <!-- Video Section with Vimeo Video -->
     <div class="row">
