@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nora Lundberg</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap" rel="stylesheet">
+    <style>
+        .navbar {
+            position: sticky;
+            top: 0;
+            background-color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 5px 30px;
+            width: 100%;
+            z-index: 1000;
+        }
+
+        .navbar .header-namn, .navbar .nav-links a {
+            font-size: 16px;
+            font-family: 'Helvetica neue', sans-serif;
+            color: #0c171d;
+            text-decoration: none;
+            padding: 10px 0;
+        }
+
+        .navbar .nav-links {
+            display: flex;
+            gap: 30px;
+        }
+
+
+        @media (max-width: 768px) {
+            .navbar {
+                padding: 10px 20px;
+            }
+            .navbar .header-namn, .navbar .nav-links a {
+                font-size: 14px;
+            }
+            .mobilpadding {
+                padding-bottom: 10px;
+            }
+
+            .intro {
+                font-family: "Helvetica neue", sans-serif;
+                font-size: 24px;
+                color: "#0c171d";
+                padding-top: 40px;
+            }
+            .mobilpadding {
+                padding-bottom: 10px;
+            }
+        }
+
+        .block {
+            padding-top: 7%;
+            padding-bottom: 7%;
+        }
+
+        .row {
+        margin: 2% 5%;
+        }
+
+        h1 {
+            font-family: "Helvetica neue", sans-serif;
+            font-size: 100px;
+            color: #0c171d;
+            line-height: 1;  /* Sätt ett fast radavstånd */
+            display: flex;
+            align-items: flex-start;
+        }
+
+        h2 {
+            font-family: "Helvetica neue", sans-serif;
+            font-size: 36px;
+            color: "#0c171d";
+        }
+
+        h3 {
+            font-family: "Helvetica neue", sans-serif;
+            color: "#0c171d";
+        }
+
+        p {
+            font-family: "helvetica neue", sans-serif;
+            font-size: 15px;
+            color: #0c171d;
+        }
+
+        .intro {
+            font-size: 28px;
+            font-family: "helvetica neue", sans-serif;
+            color: #0c171d;
+            font-weight: 500;
+            line-height: 1.3;
+        }
+
+        body {
+            background-color: white;
+        }
+
+        .outro {
+            font-size: 28px;
+            font-family: "helvetica neue", sans-serif;
+            background-color: #0c171d;
+            color: white;
+            font-weight: 500;
+            line-height: 1.3;
+
+        }
+
+
+        .image-container {
+            width: 100%; /* Kolumnens fulla bredd */
+            height: 100%; /* Anpassa höjden till kolumnens innehåll */
+            display: flex;
+            justify-content: center; /* Centrerar bilden horisontellt i kolumnen */
+            align-items: center;     /* Centrerar bilden vertikalt i kolumnen om höjden ökas */
+        }
+
+        .image-container img {
+            max-width: 100%; /* Bildens bredd anpassas till kolumnen */
+            height: auto;    /* Behåller proportionerna */
+            object-fit: cover; /* Bilden anpassar sig och fyller utrymmet */
+        }
+
+        /* Kontaktsektion styling */
+        .kontakt {
+            background-color: #0c171d;
+            padding: 5% 0;
+        }
+
+        .kontakt p {
+            color: white;
+        }
+
+
+        </style>
+    </head>
+
+    <body>
+        <!-- Navigation Bar -->
+        <div class="navbar">
+            <div class="nav-links">
+                <a href="https://noralundberg.se">Nora Lundberg</a></div> <!-- Första delen -->
+            <div class="nav-links"> <!-- Länkarna -->
+                <a href="https://noralundberg.se/om">Om</a>
+                <a href="https://noralundberg.se">Content</a>
+            </div>
+        </div>
+
+
+
+        <div class="block">
+            <div class="row">
+                <div class="col-sm-4">
+                    
+                </div>
+                <div class="col-md-7">
+                    <p class="intro">
+                        Innehållsskapare och strateg med fem års erfarenhet inom sociala medier, digital marknadsföring och webboptimering. Tidigare bred problemlösare på start-ups och nu SoMe-specialist på Sveriges Radio.                        <br>
+                        <br>Älskar hittepå. Älskar siffor.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="block" style="background-color: #f4f2ed;">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="image-container mobilpadding">
+                        <img src="Sigge.jpg">
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="image-container">
+                        <img src="Iskaffe-terapeut.jpg">
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="image-container mobilpadding">
+                        <img src="***k.jpg">
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="image-container">
+                        <img src="Musikhjälpen.jpg">
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="image-container mobilpadding">
+                        <img src="Benjamin.jpg">
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="image-container">
+                        <img src="Swiftcourt.jpg">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="block kontakt">
+            <div class="row">
+                <div class="col-md-5">
+                    <p>Nora Puh Lundberg<br>norapuh@gmail.com<br>+46 70 151 18 88</p>
+                    <p>:-)</p>
+                </div>
+            </div>
+        </div>
+
+
+    </body>
+</html>
