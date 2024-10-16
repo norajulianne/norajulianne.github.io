@@ -9,39 +9,44 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap" rel="stylesheet">
     <style>
-        /* Navigation bar styling */
-        .navbar {
-            position: sticky;
-            top: 0;
-            background-color: white;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            padding: 15px 30px;
-            width: 100%;  /* Gör navbaren 100% av skärmbredden */
-            z-index: 1000;
-        }
+       .navbar {
+    position: sticky;
+    top: 0;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 30px;
+    width: 100%;
+    z-index: 1000;
+}
 
-        .navbar .nav-links {
-            display: flex;
-            gap: 30px;
-            font-size: 16px;
-            color: black;
-        }
+.navbar .header-namn, .navbar .nav-links a {
+    font-size: 16px;
+    font-family: 'Helvetica neue', sans-serif;
+    color: black;
+    text-decoration: none;
+    padding: 10px 0;
+}
 
-        .navbar .nav-links a {
-            text-decoration: none;
-            color: black;
-    
-        }
+.navbar .nav-links {
+    display: flex;
+    gap: 30px;
+}
 
-        /* Adjust margin for smaller screens */
-        @media (max-width: 768px) {
-            .navbar {
-                margin-left: 0;
-                margin-right: 0;
+
+@media (max-width: 768px) {
+    .navbar {
+        padding: 10px 20px;
+    }
+    .navbar .header-namn, .navbar .nav-links a {
+        font-size: 14px;
+    }
+    .mobilpadding {
+                padding-bottom: 10px;
             }
-        }
+}
+
 
         /* General row styling with margin */
         .block {
@@ -56,19 +61,23 @@
         h1 {
             font-family: "Didact Gothic", sans-serif;
             font-size: 50px;
-            color: black;
+            color: #28282a;
         }
 
         h2 {
             font-family: "Didact Gothic", sans-serif;
             font-size: 36px;
-            color: black;
+            color: "28282a";
+        }
+
+        h3 {
+            color: "#28282a";
         }
 
         p {
             font-family: "helvetica neue", sans-serif;
             font-size: 15px;
-            color: black;
+            color: #28282a;
         }
 
         body {
@@ -76,12 +85,14 @@
         }
 
         .kontakt {
-            background-color: #2F343C;
+            background-color: #28282a;
             padding: 5% 0;
         }
 
         .kontakt p {
             color: white;
+            font-size: 15px;
+        
         }
 
         /* Styling for clickable video thumbnails */
@@ -143,8 +154,8 @@
 <body>
 <!-- Navigation Bar -->
 <div class="navbar">
-    <p>Nora Lundberg</p>
-    <div class="nav-links">
+    <div class="header-namn">Nora Lundberg</div> <!-- Första delen -->
+    <div class="nav-links"> <!-- Länkarna -->
         <a href="om.html">Om</a>
         <a href="content.html">Content</a>
     </div>
@@ -157,7 +168,7 @@
             <h3>Sveriges radio<br>//<br>Sommar i P1</h3>
         </div>
         <div class="col-md-5">
-            <p>”Det där kan jag göra bättre” berättade jag för Bibi Rödöö, programchef på Sommar i P1. Jag hade ganska nyss börjat på Sveriges Radio och knackade på hennes dörr för att prata sociala medier.
+            <p>”Det här kan vi göra bättre” berättade jag för Bibi Rödöö, programchef på Sommar i P1. Jag hade ganska nyss börjat på Sveriges Radio och knackade på hennes dörr för att prata sociala medier.
             </p>
             <p>
                 2023 och 2024 var jag innehållsproducent och som utlovat har det blivit bättre. Mycket bättre, faktiskt. 2023 höjde jag interaktionerna med 52% och räckvidd per inlägg, sett till medianen, med 48%. De mest sedda inläggen såg en ökning på 300-450% i räckvidd mot året innan.
@@ -167,13 +178,13 @@
 
     <div class="row">
         <div class="col-md-4">
-            <div class="video-thumbnail" data-bs-toggle="modal" data-bs-target="#vimeoModal1">
+            <div class="video-thumbnail mobilpadding" data-bs-toggle="modal" data-bs-target="#vimeoModal1">
                 <img src="Sigge thumb.jpg" alt="Video 1">
                 <span class="play-button">▶</span>
             </div>
         </div>
         <div class="col-md-4">
-            <div class="video-thumbnail" data-bs-toggle="modal" data-bs-target="#vimeoModal2">
+            <div class="video-thumbnail mobilpadding" data-bs-toggle="modal" data-bs-target="#vimeoModal2">
                 <img src="Andrev thumb.jpg" alt="Video 2">
                 <span class="play-button">▶</span>
             </div>
@@ -188,27 +199,27 @@
 </div>
 
 <!-- Sveriges Radio -->
-<div class="block" id="sr" style="background-color: #f3f5fa;">
+<div class="block" style="background-color: #f4f2ed;">
     <div class="row">
         <div class="col-sm-4">
             <h3>Sveriges radio<br>//<br>always on</h3>
         </div>
         <div class="col-md-5">
             <p>
-                Sen jag klev in som ansvarig strateg och innehållsproducent för @sverigesradio på Instagram har räckvidden ökat med 80% sett till medianinlägget. Jag producerar video, bild och text och agerar även som strategisk och kreativ partner till marknadsförare och inhouse.
+                Sen jag klev in som ansvarig strateg och innehållsproducent för @sverigesradio på Instagram har räckvidden ökat med 80% sett till medianinlägget. Jag producerar video, bild och text och agerar även som strategisk och kreativ partner till marknadsförare och CD.
             </p>
         </div>
     </div>
 
     <div class="row">
         <div class="col-md-4">
-            <div class="video-thumbnail" data-bs-toggle="modal" data-bs-target="#vimeoModal4">
+            <div class="video-thumbnail mobilpadding" data-bs-toggle="modal" data-bs-target="#vimeoModal4">
                 <img src="Benji thumb.jpg" alt="Video 4">
                 <span class="play-button">▶</span>
             </div>
         </div>
         <div class="col-md-4">
-            <div class="video-thumbnail" data-bs-toggle="modal" data-bs-target="#vimeoModal5">
+            <div class="video-thumbnail mobilpadding" data-bs-toggle="modal" data-bs-target="#vimeoModal5">
                 <img src="Babs thumb.jpg" alt="Video 5">
                 <span class="play-button">▶</span>
             </div>
@@ -223,32 +234,35 @@
 </div>
 
 <!-- Musikhjälpen -->
-<div class="block" id="musikhjalpen">
+<div class="block">
     <div class="row">
         <div class="col-sm-4">
-            <h3>Sproud<br>//<br>always on</h3>
+            <h3>Sveriges radio<br>//<br>Musikhjälpen</h3>
         </div>
         <div class="col-md-5">
-            <p>En av hattarna jag bar på Sproud var Instagramansvarig. Tillsammans med en contentbyrå producerade jag smaktester, receptreels, stop-motionklipp och infografik för det organiska flödet.
+            <p>
+                När jag blev indragen i Musikhjälpens projekt-
+grupp för programledarsläppet 2023 la jag fram den video som kom att få mest interaktion och nå högst räckvidd. Under Musikhjälpen-
+veckan jobbade jag i SoMe-teamet och skapade innehåll som nådde över 2,5 miljoner visningar.
             </p>
         </div>
     </div>
     
     <div class="row">
         <div class="col-md-4">
-            <div class="video-thumbnail" data-bs-toggle="modal" data-bs-target="#vimeoModal7">
+            <div class="video-thumbnail mobilpadding" data-bs-toggle="modal" data-bs-target="#vimeoModal7">
                 <img src="Paddlar thumb.jpg" alt="Video 7">
                 <span class="play-button">▶</span>
             </div>
         </div>
         <div class="col-md-4">
-            <div class="video-thumbnail" data-bs-toggle="modal" data-bs-target="#vimeoModal8">
+            <div class="video-thumbnail mobilpadding" data-bs-toggle="modal" data-bs-target="#vimeoModal8">
                 <img src="Tipptapp thumb.jpg" alt="Video 8">
                 <span class="play-button">▶</span>
             </div>
         </div>
         <div class="col-md-4">
-            <div class="video-thumbnail" data-bs-toggle="modal" data-bs-target="#vimeoModal9">
+            <div class="video-thumbnail mobilpadding" data-bs-toggle="modal" data-bs-target="#vimeoModal9">
                 <img src="Snusk thumb.jpg" alt="Video 9">
                 <span class="play-button">▶</span>
             </div>
@@ -377,7 +391,7 @@
 <div class="kontakt" id="kontakt">
     <div class="row">
         <div class="col-md-5">
-            <p>Nora Julianne Puh Lundberg<br>norapuh@gmail.com<br>+46 70 151 18 88</p>
+            <p>Nora Puh Lundberg<br>norapuh@gmail.com<br>+46 70 151 18 88</p>
             <p>:-)</p>
         </div>
     </div>
@@ -398,3 +412,4 @@
 
 </body>
 </html>
+
