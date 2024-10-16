@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Om Nora</title>
+    <title>Nora Lundberg</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -16,39 +16,51 @@
             top: 0;
             background-color: white;
             display: flex;
-            align-items: center;
             justify-content: space-between;
-            padding: 15px 30px;
-            width: 100%;  /* Gör navbaren 100% av skärmbredden */
+            align-items: center;
+            padding: 5px 30px;
+            width: 100%;
             z-index: 1000;
         }
 
-        .navbar .logo img {
-            height: 20px;
-            max-width: 100%;
+        .navbar .header-namn, .navbar .nav-links a {
+            font-size: 16px;
+            font-family: 'Helvetica neue', sans-serif;
+            color: black;
+            text-decoration: none;
+            padding: 10px 0;
         }
 
         .navbar .nav-links {
             display: flex;
             gap: 30px;
-            font-size: 16px;
-            color: black;
         }
 
-        .navbar .nav-links a {
-            text-decoration: none;
-            color: black;
-            font-family: "Helvetica neue", sans-serif;
-        }
-
-        .navbar .nav-links a:hover {
-            text-decoration: underline;
-        }
 
         @media (max-width: 768px) {
             .navbar {
-                margin-left: 0;
-                margin-right: 0;
+                padding: 10px 20px;
+            }
+            .navbar .header-namn, .navbar .nav-links a {
+                font-size: 14px;
+            }
+            .mobilpadding {
+                padding-bottom: 10px;
+            }
+
+            .intro {
+                font-family: "Helvetica neue", sans-serif;
+                font-size: 24px;
+                color: "28282a";
+                padding-top: 40px;
+            }
+            .mobilpadding {
+                padding-bottom: 10px;
+            }
+
+            .dubbelrow {
+                text-align: left;
+                margin: 5% 0% !important;
             }
         }
 
@@ -64,6 +76,7 @@
 
         h2 {
             font-size: 36px;
+            text-align: left;
         }
 
         h3 {
@@ -94,7 +107,10 @@
         /* Row styling with preserved margins */
         .row {
             margin: 2% 5%;
+            text-align: left;
         }
+
+        
 
         .image-container {
             width: 100%;
@@ -110,22 +126,6 @@
             color: white;
         }
 
-
-        /* Video styling to fit 60% width and center */
-        .video-100-percent {
-            width: 100%;
-            height: auto;
-            display: block;
-            object-fit: cover;
-            padding-top: 35px;
-        }
-
-        @media (max-width: 768px) {
-            .video-70-percent {
-                width: 100%;
-            }
-        }
-
         .year {
             margin-bottom: 3px;
         }
@@ -136,7 +136,7 @@
         }
 
         a:hover {
-            color: #ba58e3;
+            color: purple;
         }
 
         .om {
@@ -144,7 +144,7 @@
         }
 
         .usp-block {
-            background-color: #f3f5fa;
+            background-color: #f4f2ed;
             color: black;
             padding-top: 6%;
             padding-bottom: 10%;
@@ -152,123 +152,116 @@
         }
 
         .usp-box {
-            background-color: #eef0f6;
+            background-color: #faf8f2;
             color: black;
             padding: 10px;
             border-radius: 5px;
             margin-bottom: 5px;
-            border: solid 1px #ba58e3;
         }
 
         .usp-box2 {
-            background-color: #f5f6fa;
+            background-color: #f7f8fc;
             color: black;
             padding: 10px;
             border-radius: 5px;
             margin-bottom: 5px;
         }
 
-        .video-container {
-            position: relative;
-            width: 90%;
-            height: 0;
-            padding-bottom: 56.25%; /* 16:9 aspect ratio */
-            margin: 0 auto;
+        .image-container {
+            width: 100%; /* Kolumnens fulla bredd */
+            height: 100%; /* Anpassa höjden till kolumnens innehåll */
+            display: flex;
+            justify-content: center; /* Centrerar bilden horisontellt i kolumnen */
+            align-items: center;     /* Centrerar bilden vertikalt i kolumnen om höjden ökas */
         }
 
-        .video-container iframe {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-        }
-
-        @media (max-width: 768px) {
-            .video-container {
-                width: 100%;
-                padding-bottom: 56.25%; /* Keep 16:9 ratio */
-            }
+        .image-container img {
+            max-width: 100%; /* Bildens bredd anpassas till kolumnen */
+            height: auto;    /* Behåller proportionerna */
+            object-fit: cover; /* Bilden anpassar sig och fyller utrymmet */
         }
 
     </style>
 </head>
 <body>
 
-    <!-- Navigation Bar -->
+   <!-- Navigation Bar -->
     <div class="navbar">
-        <p style="font-size: 36px; margin-bottom: 0px;">Nora Lundberg</p>
-        <div class="nav-links">
+        <div class="header-namn">Nora Lundberg</div> <!-- Första delen -->
+        <div class="nav-links"> <!-- Länkarna -->
             <a href="om.html">Om</a>
             <a href="content.html">Content</a>
         </div>
     </div>
 
-
     <!-- Page Content -->
      <div class="block">
-        <div class="row text-center">
+        <div class="row">
             <div class="col-md-5">
-                <div class="video-container">
-                    <iframe title="vimeo-player" src="https://player.vimeo.com/video/1019145845?h=d955875411autoplay=1&loop=1&muted=1&background=1" 
-                    frameborder="0" allow="autoplay; fullscreen; picture-in-picture" title="TV"></iframe>
+                <div class="image-container">
+                    <img src="Nora2.jpg">
                 </div>
-                
             </div>
             <div class="col-md-7">
-                <div class="row">
-                    <div class="col-md-12" style="padding: 20px;">
-                        <h3>// jobb</h3>
-                        <div>
-                            <p class="usp-box2">Digital redaktör / content manager, <a href="https://sverigesradio.se">Sveriges Radio</a>, sep 2022 - nuvarande</p>
-                            <p class="usp-box2">Copywriter, <a href="https://besproud.com">Sproud</a>, mar 2022 - sep 2022</p>
-                            <p class="usp-box2">Content creator, <a href="https://swiftcourt.com">Swiftcourt</a>, okt 2019 - mar 2022</p>
-                        </div>
+                <div class="row dubbelrow">
+                    <div class="col-md-12">
+                        <h3>Jobb</h2>
+                        <p style="margin: 0;">Digital redaktör / content manager, <a href="https://sverigesradio.se">Sveriges Radio</a>, sep 2022 - nuvarande</p>
+                        <p style="margin: 0;">Copywriter, <a href="https://besproud.com">Sproud</a>, mar 2022 - sep 2022</p>
+                        <p style="margin: 0;">Content creator, <a href="https://swiftcourt.com">Swiftcourt</a>, okt 2019 - mar 2022</p>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col-md-12" style="padding: 20px;">
-                        <h3>//<br>plugg</h3>
-                        <div>
-                            <p class="usp-box2">Kvällskurs i grafisk design och reklam, Forsberg skola, 2024</p>
-                            <p class="usp-box2">Medie- & kommunikationsvetarprogrammet, Göteborgs universitet, 2016 - 2019</p>
-                        </div>
+                <div class="row dubbelrow" style="margin-top: 40px;">
+                    <div class="col-md-10">
+                        <h3>Plugg</h2>
+                        <p style="margin: 0;">Kvällskurs i grafisk design och reklam, Forsberg skola, 2024</p>
+                        <p style="margin: 0;">Medie- & kommunikationsvetarprogrammet, Göteborgs universitet, 2016 - 2019</p>
+                    </div>
+                </div>
+                <div class="row dubbelrow" style="margin-top: 40px;">
+                    <div class="col-md-10">
+                        <h3>Tycker om</h2>
+                        <p>
+                            Klippa & klistra, designa, hittepå, mätamätamäta, skriva, skratta, boule och gaming.
+                        </p>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 
+    
 
     <div class="usp-block">
         <div class="row">
             <div class="col-md-4" style="padding: 20px;">
-                <h3>sociala medier</h3>
-                <p>Det är eventuellt viktigt för designens skull att jag skriver en liten introtext här.</p>
+                <h3>Sociala medier</h3>
+                <p>Tre år på start-ups gjorde mig till en <i>jack of all trades, master of none</i>. Ish. Men efter två år av SoMe på Sveriges Radio är mitt främsta område: </p>
                 <div>
                     <p class="usp-box">Innehållsproduktion</p>
                     <p class="usp-box">Contentstrategi</p>
-                    <p class="usp-box">Analys & uppföljning</p>
-                    <p class="usp-box">Annonsering: strategi & optimering</p>
+                    <p class="usp-box">Analys & utbildning</p>
+                    <p class="usp-box">Annonsering</p>
                 </div>
             </div>
             <div class="col-md-4" style="padding: 20px;">
-                <h3>webb</h3>
-                <p>Det är eventuellt viktigt för designens skull att jag skriver en liten introtext här.</p>
+                <h3>Webb</h3>
+                <p>Landningssidor, blogginlägg, mejlutskick och produktutveckling. På mitt första start-up var webboptimering grejen:</p>
                 <div>
                     <p class="usp-box">Konverteringsoptimering, A/B-test</p>
                     <p class="usp-box">SEO</p>
-                    <p class="usp-box">Illustration</p>
+                    <p class="usp-box">UX</p>
                     <p class="usp-box">Copywriting</p>
                 </div>
             </div>
             <div class="col-md-4" style="padding: 20px;">
-                <h3>design & ton</h3>
-                <p>Det är eventuellt viktigt för designens skull att jag skriver en liten introtext här.</p>
+                <h3>Design & ton</h3>
+                <p>Jag spenderar mycket tid i Adobe-suiten, men är även vän med Figma, DaVinci Resolve, Keynote och Notion för att tugga fram:</p>
                 <div>
                     <p class="usp-box">Visuell identitet</p>
                     <p class="usp-box">Copyplattform</p>
-                    <p class="usp-box">Presentationer: utformning och innehåll</p>
+                    <p class="usp-box">Presentationer</p>
+                    <p class="usp-box">Illustration</p>
                 </div>
             </div>
         </div>
