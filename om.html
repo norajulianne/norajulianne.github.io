@@ -61,12 +61,15 @@
             .dubbelrow {
                 text-align: left;
                 margin: 40px 0px !important;
+                padding: 0px;
             }
+    
+            
         }
 
         /* General styling */
         h1, h2, p {
-            font-family: Helvetica neue;
+            font-family: "Helvetica neue", sans-serif;
             color: black;
         }
 
@@ -181,6 +184,14 @@
             object-fit: cover; /* Bilden anpassar sig och fyller utrymmet */
         }
 
+        .jobbplugg {
+            padding: 0% 5%;
+        }
+
+        .jobbpluggsektion {
+            margin-top: 40px;
+        }
+
     </style>
 </head>
 <body>
@@ -189,42 +200,34 @@
     <div class="navbar">
         <div class="header-namn">Nora Lundberg</div> <!-- Första delen -->
         <div class="nav-links"> <!-- Länkarna -->
-            <a href="om.html">Om</a>
-            <a href="content.html">Content</a>
+            <div class="header-namn">Om</div>
+            <a href="https://noralundberg.se/start">Content</a>
         </div>
     </div>
 
     <!-- Page Content -->
-     <div class="block">
+    <div class="block">
         <div class="row">
             <div class="col-md-5">
                 <div class="image-container">
                     <img src="Nora2.jpg">
                 </div>
             </div>
-            <div class="col-md-7">
-                <div class="row dubbelrow">
-                    <div class="col-md-12">
-                        <h3>Jobb</h2>
-                        <p style="margin: 0;">Digital redaktör / content manager, <a href="https://sverigesradio.se">Sveriges Radio</a>, sep 2022 - nuvarande</p>
-                        <p style="margin: 0;">Copywriter, <a href="https://besproud.com">Sproud</a>, mar 2022 - sep 2022</p>
-                        <p style="margin: 0;">Content creator, <a href="https://swiftcourt.com">Swiftcourt</a>, okt 2019 - mar 2022</p>
-                    </div>
+            <div class="col-md-6 jobbplugg">
+                <div class="jobbpluggsektion">
+                    <h3>Jobb</h3>
+                    <p style="margin: 0;">Digital redaktör / content manager, <a href="https://sverigesradio.se">Sveriges Radio</a>, sep 2022 - nuvarande</p>
+                    <p style="margin: 0;">Copywriter, <a href="https://besproud.com">Sproud</a>, mar 2022 - sep 2022</p>
+                    <p style="margin: 0;">Content creator, <a href="https://swiftcourt.com">Swiftcourt</a>, okt 2019 - mar 2022</p>
                 </div>
-                <div class="row dubbelrow" style="margin-top: 40px;">
-                    <div class="col-md-10">
-                        <h3>Plugg</h2>
-                        <p style="margin: 0;">Kvällskurs i grafisk design och reklam, Forsberg skola, 2024</p>
-                        <p style="margin: 0;">Medie- & kommunikationsvetarprogrammet, Göteborgs universitet, 2016 - 2019</p>
-                    </div>
+                <div class="jobbpluggsektion">   
+                    <h3>Plugg</h3>
+                    <p style="margin: 0;">Kvällskurs i grafisk design och reklam, Forsberg skola, 2024</p>
+                    <p style="margin: 0;">Medie- & kommunikationsvetarprogrammet, Göteborgs universitet, 2016 - 2019</p>
                 </div>
-                <div class="row dubbelrow" style="margin-top: 40px;">
-                    <div class="col-md-10">
-                        <h3>Tycker om</h2>
-                        <p>
-                            Klippa & klistra, designa, hittepå, mätamätamäta, skriva, skratta, boule och gaming.
-                        </p>
-                    </div>
+                <div class="jobbpluggsektion">
+                    <h3>Tycker om</h3>
+                    <p>Klippa & klistra, designa, hittepå, mätamätamäta, skriva, skratta, boule och gaming.</p>
                 </div>
             </div>
         </div>
