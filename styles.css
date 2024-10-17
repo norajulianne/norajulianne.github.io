@@ -1,108 +1,126 @@
-h1 {
-    font-family: 'Questrial', sans-serif;
-          font-size: 40px;
-      padding-bottom: 10px;
-            padding-top: 30px;
-          } 
-        h2 {
-    font-family: 'Questrial', sans-serif;
-          font-size: 30px;
-      padding-bottom: 10px;
-          } 
-      p {
-    font-family: 'Questrial', sans-serif;
-      color: #000000;
-       font-size: 18px;
-          }
-  .header {
-        height: 100px;
-          }
-    .wwheader {
-        padding-right: 20px;
-        padding-left: 20px;
-        padding-top: 13px;
-        border-bottom: 1px solid black;
-              }
-
-  .container {
-      padding-right: 15px;
-      padding-left: 15px;
-      margin-right: auto;
-      margin-left: auto;
-  }	
-
-  .wwheadertext {
-    font-family: 'questrial';
-    font-weight: bold;
-    text-align: center;
-    font-size: 22px;
-      }
-
-    .wwcategory
-    {
-        font-family: 'questrial';
-        font-weight: 900;
-        text-align: center;
-        font-size: 65px;
-        padding-top: 14px;
-        padding-bottom: 14px;
-        padding-left: 7%;
-        font-weight: bold;
-        text-align: left;
-          }
-
-          .wwsort
-          {
-              font-family: 'questrial';
-              font-size: 16px;
-              padding-left: 10px;
-              padding-top: 6px;
-                }
-
-                .col-sm-3
-                {
-                    padding-left: 1px;
-                    padding-right: 0px;
-                    margin-left: 0px;
-                    margin-right: 0px;
-                      }
-    .wwbrand
-    {
-    font-family: 'questrial';
-    font-size: 14px;
-    padding-left: 10px;
-    padding-top: 6px;
-    margin-bottom: 4px;
-    font-weight: bold;
+.navbar {
+            position: sticky;
+            top: 0;
+            background-color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 5px 30px;
+            width: 100%;
+            z-index: 1000;
         }
-        .wwname
-        {
-        font-family: 'questrial';
-        font-size: 14px;
-        padding-left: 10px;
-        line-height: 1;
-        font-weight: bold;
+
+        .navbar .header-namn, .navbar .nav-links a {
+            font-size: 16px;
+            font-family: 'Helvetica neue', sans-serif;
+            color: #0c171d;
+            text-decoration: none;
+            padding: 10px 0;
+        }
+
+        .navbar .nav-links {
+            display: flex;
+            gap: 30px;
+        }
+
+
+        @media (max-width: 768px) {
+            .navbar {
+                padding: 10px 20px;
             }
-            .wwprice
-            {
-            font-family: 'questrial';
-            font-size: 14px;
-            padding-left: 10px;
-            padding-top: 4px;
-                }
-.wwaction
-{
-font-family: 'questrial';
-font-size: 30px;
-padding-top: 10px;
-text-align: center;
+            .navbar .header-namn, .navbar .nav-links a {
+                font-size: 14px;
+            }
+            .mobilpadding {
+                padding-bottom: 10px;
             }
 
-            .wwpages
-            {
-                padding-top: 12px;
-                padding-bottom: 12px;
-                padding-left: 10px;
-                padding-right: 10px;
-                border-bottom: 1px solid black;
-                        }
+            .intro {
+                font-family: "Helvetica neue", sans-serif;
+                font-size: 24px;
+                color: "#0c171d";
+                padding-top: 40px;
+            }
+        }
+
+        .block {
+            padding-top: 7%;
+            padding-bottom: 7%;
+        }
+
+        .row {
+        margin: 2% 5%;
+        }
+
+        h1 {
+            font-family: "Helvetica neue", sans-serif;
+            font-size: 100px;
+            color: #0c171d;
+            line-height: 1;  /* Sätt ett fast radavstånd */
+            display: flex;
+            align-items: flex-start;
+        }
+
+        h2 {
+            font-family: "Helvetica neue", sans-serif;
+            font-size: 36px;
+            color: "#0c171d";
+        }
+
+        h3 {
+            font-family: "Helvetica neue", sans-serif;
+            color: "#0c171d";
+        }
+
+        p {
+            font-family: "helvetica neue", sans-serif;
+            font-size: 15px;
+            color: #0c171d;
+        }
+
+        .intro {
+            font-size: 28px;
+            font-family: "helvetica neue", sans-serif;
+            color: #0c171d;
+            font-weight: 500;
+            line-height: 1.3;
+        }
+
+        body {
+            background-color: white;
+        }
+
+        .outro {
+            font-size: 28px;
+            font-family: "helvetica neue", sans-serif;
+            background-color: #0c171d;
+            color: white;
+            font-weight: 500;
+            line-height: 1.3;
+
+        }
+
+
+        .image-container {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .image-container img {
+            max-width: 100%;
+            height: auto; 
+            object-fit: cover;
+        }
+
+        /* Kontaktsektion styling */
+        .kontakt {
+            background-color: #0c171d;
+            padding: 5% 0;
+        }
+
+        .kontakt p {
+            color: white;
+        }
