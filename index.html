@@ -126,8 +126,22 @@
             margin-top: 20px;
         }
 
+        .VHS2 {
+            width: 70%;
+            transition: width 0.3s ease;
+            margin-top: 20px;
+        }
+
         .VHS:hover {
-            width: 100%; /* Expands to 100% on hover */
+            width: 75%; /* Expands to 100% on hover */
+            transform: rotate(0.5deg); /* Slight rotation of 3 degrees */
+            transition: transform 0.3s ease, width 0.3s ease;
+        }
+
+        .VHS2:hover {
+            width: 75%; /* Expands to 100% on hover */
+            transform: rotate(-0.5deg); /* Slight rotation of 3 degrees */
+            transition: transform 0.3s ease, width 0.3s ease;
         }
 
     
@@ -140,7 +154,7 @@
   <div class="navbar">
     <div class="header-namn">Nora Lundberg</div> <!-- Första delen -->
     <div class="nav-links"> <!-- Länkarna -->
-        <a href="om.html">Om</a>
+        <a href="https://noralundberg.se/om">Om</a>
         <a href="content.html">Content</a>
     </div>
 </div>
@@ -168,7 +182,7 @@
             </div>
             <div class="col-md-4">
                 <a href="https://noralundberg.se/sverigesradio#sr">
-                    <img src="srklister2.png" alt="Image 2" class="VHS">
+                    <img src="srklister2.png" alt="Image 2" class="VHS2">
                 </a>
             </div>
             <div class="col-md-4">
@@ -179,18 +193,18 @@
         </div>
         <div class="row text-center">
             <div class="col-md-4">
-                <a href="https://noralundberg.se/sverigesradio#musikhjalpen">
-                    <img src="mhklister3.png" alt="Image 4" class="VHS">
+                <a href="https://noralundberg.se/sproud#sproud">
+                    <img src="sproudklister4.png" alt="Image 5" class="VHS2">
                 </a>
             </div>
             <div class="col-md-4">
-                <a href="https://noralundberg.se/sproud#sproud">
-                    <img src="sproudklister4.png" alt="Image 5" class="VHS">
+                <a href="https://noralundberg.se/sverigesradio#musikhjalpen">
+                    <img src="musikhjalpenklister.png" alt="Image 4" class="VHS">
                 </a>
             </div>
             <div class="col-md-4">
                 <a href="Sproud.html">
-                    <img src="swcklister.png" alt="Image 6" class="VHS">
+                    <img src="swcklister2.png" alt="Image 6" class="VHS2">
                 </a>
             </div>
         </div>
