@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Sproud</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap" rel="stylesheet">
+<style>
+/* Navigation bar styling */
+        html, body {
+            height: 100%;
+        }
+
+        .navbar {
+            position: sticky;
+            top: 0;
+            background-color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center; /* Centering both sides */
+            padding: 5px 30px;
+            width: 100%;
+            z-index: 1000;
+        }
+
+        .navbar .header-namn, .navbar .nav-links a {
+            font-size: 16px;
+            font-family: 'Helvetica neue', sans-serif;
+            color: black;
+            text-decoration: none;
+            padding: 10px 0;
+        }
+
+        .navbar .nav-links {
+            display: flex;
+            gap: 30px;
+        }
+
+
+        @media (max-width: 768px) {
+            .navbar {
+                padding: 10px 20px;
+            }
+            .navbar .header-namn, .navbar .nav-links a {
+                font-size: 14px;
+            }
+            .mobilpadding {
+                        padding-bottom: 2rem;
+                    }
+        }
+
+/* General row styling with margin */
+.row {
+    margin: 2% 5%;
+}
+
+h1 {
+    font-family: "Helvetica neue", sans-serif;
+    font-size: 50px;
+    color: black;
+}
+
+h2 {
+    font-family: "Helvetica neue", sans-serif;
+    font-size: 36px;
+    color: black;
+}
+
+p {
+    font-family: "Helvetica neue", sans-serif;
+    font-size: 15px;
+    color: black;
+}
+
+body {
+    background-color: white;
+}
+
+.kontakt {
+    background-color: #2F343C;   
+    padding: 5% 0;
+}
+
+.block {
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+
+.image-container {
+    width: 100%;
+}
+
+
+.logo {
+            width: 30%; /* Kolumnens fulla bredd */
+            height: 30%; /* Anpassa höjden till kolumnens innehåll */
+            display: flex;
+            justify-content: center; /* Centrerar bilden horisontellt i kolumnen */
+            align-items: center;     /* Centrerar bilden vertikalt i kolumnen om höjden ökas */
+        }
+
+.business {
+    font-size: 14px;
+    color: gray;
+    margin-top: 40px;
+}
+
+</style>
+</head>
+
+<body>
+<!-- Navigation Bar -->
+<div class="navbar">
+    <div class="header-namn">Nora Lundberg</div>
+    <div class="nav-links">
+        <a href="om.html">Om</a>
+        <a href="content.html">Content</a>
+    </div>
+</div>
+
+<div class="block">
+    <div class="row">
+        <div class="col-sm-3">
+            <div>
+                <img class="logo mobilpadding" src="swiftcourt logo.png">
+            </div>
+            <p class="business">Swiftcourt är ett start-up som levererar säkra, digitala kontraktslösningar för köp mellan privatpersoner på Europas största onlinemarknadsplatser. Bland samarbetspartners hittar man ex. Blocket.se, Finn.no, DoneDeal.ie och Mobile.de.</p>
+        </div>
+        <div class="col-md-1"></div>
+        <div class="col-md-5">
+            <p>
+                Som content creator på Swiftcourt jobbade jag med konverteringsoptimering på landningssidor, presentationsunderlag för b2b, SEO-artiklar och annonsering. I tätt samarbete med en UX-designer och en growth manager implementerade jag innehåll baserat på tester och optimering. 
+            </p>
+            <p>
+                Jag tog även fram en visuell identitet samt “tone of voice” som låg till grund när jag designade om hemsida och mejlutskick.
+            </p>
+            <p>
+                På Swiftcourt projektledde jag även framtagandet av startup:ets pitch deck – ett stort projekt där företagsstrategi och storytelling krävde betydligt mycket mer arbete än design och layout.
+            </p>
+        </div>
+    </div>
+
+<!-- Bildblock -->
+<div class="block">
+    <div class="row">
+        <div class="col-md-4">
+            <div>
+                <img class="image-container mobilpadding" src="swc seo.png">
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div>
+                <img class="image-container mobilpadding" src="swc pitch deck.png">
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div>
+                <img class="image-container" src="swc hemsida.png">
+            </div>
+        </div>
+    </div> 
+</div>
+
+
+<!-- Kontakt -->
+
+<div class="kontakt">
+    <div class="row">
+        <div class="col-md-5">
+            <p style="color: white;">
+                Nora Julianne Puh Lundberg
+                <br>norapuh@gmail.com
+                <br>+46 70 151 18 88
+            </p>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
