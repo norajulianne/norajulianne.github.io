@@ -1,112 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>Sproud</title>
+<title>Nora - Swiftcourt</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
 <link rel="preconnect" href="https://fonts.gstatic.com">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
 <style>
 /* Navigation bar styling */
         html, body {
             height: 100%;
         }
-
-        .navbar {
-            position: sticky;
-            top: 0;
-            background-color: white;
-            display: flex;
-            justify-content: space-between;
-            align-items: center; /* Centering both sides */
-            padding: 5px 30px;
-            width: 100%;
-            z-index: 1000;
-        }
-
-        .navbar .header-namn, .navbar .nav-links a {
-            font-size: 16px;
-            font-family: 'Helvetica neue', sans-serif;
-            color: black;
-            text-decoration: none;
-            padding: 10px 0;
-        }
-
-        .navbar .nav-links {
-            display: flex;
-            gap: 30px;
-        }
-
-
-        @media (max-width: 768px) {
-            .navbar {
-                padding: 10px 20px;
-            }
-            .navbar .header-namn, .navbar .nav-links a {
-                font-size: 14px;
-            }
-            .mobilpadding {
-                        padding-bottom: 2rem;
-                    }
-        }
-
-/* General row styling with margin */
-.row {
-    margin: 2% 5%;
-}
-
-h1 {
-    font-family: "Helvetica neue", sans-serif;
-    font-size: 50px;
-    color: black;
-}
-
-h2 {
-    font-family: "Helvetica neue", sans-serif;
-    font-size: 36px;
-    color: black;
-}
-
-p {
-    font-family: "Helvetica neue", sans-serif;
-    font-size: 15px;
-    color: black;
-}
-
-body {
-    background-color: white;
-}
-
-.kontakt {
-    background-color: #2F343C;   
-    padding: 5% 0;
-}
-
-.block {
-    margin-top: 10%;
-    margin-bottom: 10%;
-}
-
-.image-container {
-    width: 100%;
-}
-
-
-.logo {
-            width: 30%; /* Kolumnens fulla bredd */
-            height: 30%; /* Anpassa höjden till kolumnens innehåll */
-            display: flex;
-            justify-content: center; /* Centrerar bilden horisontellt i kolumnen */
-            align-items: center;     /* Centrerar bilden vertikalt i kolumnen om höjden ökas */
-        }
-
-.business {
-    font-size: 14px;
-    color: gray;
-    margin-top: 40px;
-}
 
 </style>
 </head>
@@ -114,10 +21,10 @@ body {
 <body>
 <!-- Navigation Bar -->
 <div class="navbar">
-    <div class="header-namn">Nora Lundberg</div>
-    <div class="nav-links">
-        <a href="om.html">Om</a>
-        <a href="content.html">Content</a>
+    <div class="header-namn">Nora Lundberg</div> <!-- Första delen -->
+    <div class="nav-links"> <!-- Länkarna -->
+        <a href="https://noralundberg.se/om">Om</a>
+        <a href="https://noralundberg.se">Content</a>
     </div>
 </div>
 
@@ -142,9 +49,6 @@ body {
             </p>
         </div>
     </div>
-
-<!-- Bildblock -->
-<div class="block">
     <div class="row">
         <div class="col-md-4">
             <div>
@@ -165,13 +69,14 @@ body {
 </div>
 
 
+
 <!-- Kontakt -->
 
-<div class="kontakt">
+<div class="kontakt-light">
     <div class="row">
         <div class="col-md-5">
-            <p style="color: white;">
-                Nora Julianne Puh Lundberg
+            <p>
+                Nora Puh Lundberg
                 <br>norapuh@gmail.com
                 <br>+46 70 151 18 88
             </p>
