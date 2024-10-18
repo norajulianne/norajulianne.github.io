@@ -3,194 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nora Lundberg</title>
+    <title>Nora - Om</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
     <style>
-        /* Navigation bar styling */
-        .navbar {
-            position: sticky;
-            top: 0;
-            background-color: white;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 5px 30px;
-            width: 100%;
-            z-index: 1000;
-        }
-
-        .navbar .header-namn, .navbar .nav-links a {
-            font-size: 16px;
-            font-family: 'Helvetica neue', sans-serif;
-            color: black;
-            text-decoration: none;
-            padding: 10px 0;
-        }
-
-        .navbar .nav-links {
-            display: flex;
-            gap: 30px;
-        }
-
-
-        @media (max-width: 768px) {
-            .navbar {
-                padding: 10px 20px;
-            }
-            .navbar .header-namn, .navbar .nav-links a {
-                font-size: 14px;
-            }
-            .mobilpadding {
-                padding-bottom: 10px;
-            }
-
-            .intro {
-                font-family: "Helvetica neue", sans-serif;
-                font-size: 24px;
-                color: "28282a";
-                padding-top: 40px;
-            }
-            .mobilpadding {
-                padding-bottom: 10px;
-            }
-
-            .dubbelrow {
-                text-align: left;
-                margin: 40px 0px !important;
-                padding: 0px;
-            }
-    
-            
-        }
-
-        /* General styling */
-        h1, h2, p {
-            font-family: "Helvetica neue", sans-serif;
-            color: black;
-        }
-
-        h1 {
-            font-size: 100px;
-        }
-
-        h2 {
-            font-size: 36px;
-            text-align: left;
-        }
-
-        h3 {
-            text-align: left;
-        }
-
-        p {
-            font-size: 16px;
-            text-align: left;
-        }
-
-        body {
-            background-color: white;
-        }
-
-        /* Block section styling */
-        .block {
-            margin-top: 6%;
-            margin-bottom: 10%;
-        }
-
-        .bw-block {
-            padding-top: 6%;
-            padding-bottom: 10%;
-            background-color: black;
-        }
-
-        /* Row styling with preserved margins */
-        .row {
-            margin: 2% 5%;
-            text-align: left;
-        }
-
-        
-
-        .image-container {
-            width: 100%;
-        }
-
-        /* Kontaktsektion styling */
-        .kontakt {
-            background-color: #0c171d;
-            padding: 5% 0;
-        }
-
-        .kontakt p {
-            color: white;
-        }
-
-        .year {
-            margin-bottom: 3px;
-        }
-
-        a {
-            color: black;
-            text-decoration: none;
-        }
-
-        a:hover {
-            color: purple;
-        }
-
-        .om {
-            padding: 35px;
-        }
-
-        .usp-block {
-            background-color: #f4f2ed;
-            color: black;
-            padding-top: 6%;
-            padding-bottom: 10%;
-
-        }
-
-        .usp-box {
-            background-color: #faf8f2;
-            color: black;
-            padding: 10px;
-            border-radius: 5px;
-            margin-bottom: 5px;
-        }
-
-        .usp-box2 {
-            background-color: #f7f8fc;
-            color: black;
-            padding: 10px;
-            border-radius: 5px;
-            margin-bottom: 5px;
-        }
-
-        .image-container {
-            width: 100%; /* Kolumnens fulla bredd */
-            height: 100%; /* Anpassa höjden till kolumnens innehåll */
-            display: flex;
-            justify-content: center; /* Centrerar bilden horisontellt i kolumnen */
-            align-items: center;     /* Centrerar bilden vertikalt i kolumnen om höjden ökas */
-        }
-
-        .image-container img {
-            max-width: 100%; /* Bildens bredd anpassas till kolumnen */
-            height: auto;    /* Behåller proportionerna */
-            object-fit: cover; /* Bilden anpassar sig och fyller utrymmet */
-        }
-
-        .jobbplugg {
-            padding: 0% 5%;
-        }
-
-        .jobbpluggsektion {
-            margin-top: 40px;
-        }
 
     </style>
 </head>
@@ -200,8 +20,8 @@
     <div class="navbar">
         <div class="header-namn">Nora Lundberg</div> <!-- Första delen -->
         <div class="nav-links"> <!-- Länkarna -->
-            <div class="header-namn">Om</div>
-            <a href="https://noralundberg.se/start">Content</a>
+            <div class="header-namn" style="text-decoration: underline;">Om</div>
+            <a href="content.html">Content</a>
         </div>
     </div>
 
@@ -238,7 +58,7 @@
     <div class="usp-block">
         <div class="row">
             <div class="col-md-4" style="padding: 20px;">
-                <h3>Sociala medier</h3>
+                <h4>Sociala medier</h4>
                 <p>Tre år på start-ups gjorde mig till en <i>jack of all trades, master of none</i>. Ish. Men efter två år av SoMe på Sveriges Radio är mitt främsta område: </p>
                 <div>
                     <p class="usp-box">Innehållsproduktion</p>
@@ -248,7 +68,7 @@
                 </div>
             </div>
             <div class="col-md-4" style="padding: 20px;">
-                <h3>Webb</h3>
+                <h4>Webb</h4>
                 <p>Landningssidor, blogginlägg, mejlutskick och produktutveckling. På mitt första start-up var webboptimering grejen:</p>
                 <div>
                     <p class="usp-box">Konverteringsoptimering, A/B-test</p>
@@ -258,7 +78,7 @@
                 </div>
             </div>
             <div class="col-md-4" style="padding: 20px;">
-                <h3>Design & ton</h3>
+                <h4>Design & ton</h4>
                 <p>Jag spenderar mycket tid i Adobe-suiten, men är även vän med Figma, DaVinci Resolve, Keynote och Notion för att tugga fram:</p>
                 <div>
                     <p class="usp-box">Visuell identitet</p>
@@ -272,11 +92,10 @@
 
    
     <!-- Kontaktsektion -->
-    <div class="kontakt" id="kontakt">
+    <div class="kontakt-dark" id="kontakt">
         <div class="row">
             <div class="col-md-5">
-                <p>Nora Julianne Puh Lundberg<br>norapuh@gmail.com<br>+46 70 151 18 88</p>
-                <p>:-)</p>
+                <p>Nora Puh Lundberg<br>norapuh@gmail.com<br>+46 70 151 18 88</p>
             </div>
         </div>
     </div>
