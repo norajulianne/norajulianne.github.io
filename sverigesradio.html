@@ -1,154 +1,15 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>SR</title>
+    <title>Nora - Sveriges Radio</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
     <style>
-       .navbar {
-    position: sticky;
-    top: 0;
-    background-color: white;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 5px 30px;
-    width: 100%;
-    z-index: 1000;
-}
-
-.navbar .header-namn, .navbar .nav-links a {
-    font-size: 16px;
-    font-family: 'Helvetica neue', sans-serif;
-    color: black;
-    text-decoration: none;
-    padding: 10px 0;
-}
-
-.navbar .nav-links {
-    display: flex;
-    gap: 30px;
-}
-
-
-@media (max-width: 768px) {
-    .navbar {
-        padding: 10px 20px;
-    }
-    .navbar .header-namn, .navbar .nav-links a {
-        font-size: 14px;
-    }
-    .mobilpadding {
-                padding-bottom: 2rem;
-            }
-}
-
-
-        /* General row styling with margin */
-        .block {
-            padding-top: 7%;
-            padding-bottom: 7%;
-        }
-
-        .row {
-        margin: 2% 5%;
-        }
-
-        h1 {
-            font-family: "Didact Gothic", sans-serif;
-            font-size: 50px;
-            color: #28282a;
-        }
-
-        h2 {
-            font-family: "Didact Gothic", sans-serif;
-            font-size: 36px;
-            color: "28282a";
-        }
-
-        h3 {
-            color: "#28282a";
-        }
-
-        p {
-            font-family: "helvetica neue", sans-serif;
-            font-size: 15px;
-            color: #28282a;
-        }
-
-        body {
-            background-color: white;
-        }
-
-        .kontakt {
-            background-color: #28282a;
-            padding: 5% 0;
-        }
-
-        .kontakt p {
-            color: white;
-            font-size: 15px;
-        
-        }
-
-        /* Styling for clickable video thumbnails */
-        .video-thumbnail {
-            position: relative;
-            cursor: pointer;
-        }
-
-        .video-thumbnail img {
-            width: 100%;
-        }
-
-        .play-button {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            font-size: 48px;
-            color: white;
-            opacity: 0.8;
-        }
-
-        /* Modal adjustments */
-        .modal-content {
-            border: none;
-            background-color: transparent;
-        }
-
-        .modal-header {
-            border-bottom: none;
-            padding: 0.5rem;
-            display: flex;
-            justify-content: flex-end;
-        }
-
-        .modal-dialog {
-            max-width: 720px;
-        }
-
-        .modal-backdrop {
-            background-color: rgba(0, 0, 0, 0.7);
-        }
-
-        .btn-close {
-            font-size: 24px;
-            color: white;
-            background: none;
-            border: none;
-            outline: none;
-        }
-
-        .modal-body iframe {
-            border: none;
-            width: 100%;
-            height: 720px; /* Increase height for 9:16 video */
-        }
     </style>
 </head>
 <body>
@@ -156,25 +17,31 @@
 <div class="navbar">
     <div class="header-namn">Nora Lundberg</div> <!-- Första delen -->
     <div class="nav-links"> <!-- Länkarna -->
-        <a href="om.html">Om</a>
-        <a href="content.html">Content</a>
+        <a href="https://noralundberg.se/om">Om</a>
+        <a href="https://noralundberg.se">Content</a>
     </div>
 </div>
 
 <!-- Sommar i P1 -->
 <div class="block" id="sommarip1">
-    <div class="row">
-        <div class="col-sm-4">
-            <h3>Sveriges radio<br>//<br>Sommar i P1</h3>
+        <div class="row">
+            <div class="col-sm-3">
+                <div>
+                    <img class="logo mobilpadding" src="sommar i p1 logga.png">
+                </div>
+                <p class="business">
+                    Sommar i P1 är under säsong Sveriges största podd och ett av Sveriges Radios flaggskepp. Trots detta gjordes tidigare inget arbete med att lyfta den digitala närvaron på sociala medier, utan man la ut annonsmaterialet även organiskt.
+                </p>
+            </div>
+            <div class="col-md-1"></div>
+            <div class="col-md-5">
+                <p>”Det här kan vi göra bättre” berättade jag för Bibi Rödöö, programchef på Sommar i P1. Jag hade ganska nyss börjat på Sveriges Radio och knackade på hennes dörr för att prata sociala medier.
+                </p>
+                <p>
+                    2023 och 2024 var jag innehållsproducent och som utlovat har det blivit bättre. Mycket bättre, faktiskt. 2023 höjde jag interaktionerna med 52% och räckvidd per inlägg, sett till medianen, med 48%. De mest sedda inläggen såg en ökning på 300-450% i räckvidd mot året innan.
+                </p>
+            </div>
         </div>
-        <div class="col-md-5">
-            <p>”Det här kan vi göra bättre” berättade jag för Bibi Rödöö, programchef på Sommar i P1. Jag hade ganska nyss börjat på Sveriges Radio och knackade på hennes dörr för att prata sociala medier.
-            </p>
-            <p>
-                2023 och 2024 var jag innehållsproducent och som utlovat har det blivit bättre. Mycket bättre, faktiskt. 2023 höjde jag interaktionerna med 52% och räckvidd per inlägg, sett till medianen, med 48%. De mest sedda inläggen såg en ökning på 300-450% i räckvidd mot året innan.
-            </p>
-        </div>
-    </div>
 
     <div class="row">
         <div class="col-md-4">
@@ -199,14 +66,24 @@
 </div>
 
 <!-- Sveriges Radio -->
-<div class="block" style="background-color: #f4f2ed;" id="sr">
+<div class="block dark">
+
     <div class="row">
-        <div class="col-sm-4">
-            <h3>Sveriges radio<br>//<br>always on</h3>
+        <div class="col-sm-3">
+            <div>
+                <img class="logo mobilpadding" src="Sveriges Radio logga.png">
+            </div>
+            <p class="business">
+                Om Sveriges Radio
+            </p>
         </div>
+        <div class="col-md-1"></div>
         <div class="col-md-5">
             <p>
                 Sen jag klev in som ansvarig strateg och innehållsproducent för @sverigesradio på Instagram har räckvidden ökat med 80% sett till medianinlägget. Jag producerar video, bild och text och agerar även som strategisk och kreativ partner till marknadsförare och CD.
+            </p>
+            <p>
+                Nedan är exempel på innehåll framtaget för att öka kännedomen om programsegmentet P4 Extra - Gästen (som även annonserats med en CTR på 8,11%), höja P4:s status som beredskapskanal bland unga och förankra förtroendet för våra utrikeskorrespondenter.
             </p>
         </div>
     </div>
@@ -234,15 +111,23 @@
 </div>
 
 <!-- Musikhjälpen -->
-<div class="block" id="musikhjalpen">
+<div class="block">
     <div class="row">
-        <div class="col-sm-4">
-            <h3>Sveriges radio<br>//<br>Musikhjälpen</h3>
+        <div class="col-sm-3">
+            <div>
+                <img class="logo mobilpadding" src="musikhjälpen logga.png">
+            </div>
+            <p class="business">
+                Under Sveriges Radio och SVT:s årliga storsatsning Musikhjälpen står radion för innehållet. Det innebär att både kommunikation och programinnehåll görs av SR-medarbetare.
+            </p>
+            <p class="business">
+                För sociala medier produceras innehåll inför sändningsveckan i form av stad-, tema- och programledarsläpp. Under Musikhjälpen är SoMe-gänget produktionens största team.
+            </p>
         </div>
+        <div class="col-md-1"></div>
         <div class="col-md-5">
             <p>
-                När jag blev indragen i Musikhjälpens projekt-
-grupp för programledarsläppet 2023 la jag fram den video som kom att få mest interaktion och nå högst räckvidd. Under Musikhjälpen-veckan jobbade jag i SoMe-teamet och skapade innehåll som nådde över 2,5 miljoner visningar.
+                När jag blev indragen i Musikhjälpens projektgrupp för programledarsläppet 2023 producerade jag den video som kom att få mest interaktion och nå högst räckvidd inför starten. Under Musikhjälpen-veckan jobbade jag i SoMe-teamet och skapade innehåll som nådde över 2,5 miljoner visningar.
             </p>
         </div>
     </div>
@@ -387,11 +272,10 @@ grupp för programledarsläppet 2023 la jag fram den video som kom att få mest 
     </div>
 </div>
 
-<div class="kontakt" id="kontakt">
+<div class="kontakt-light" id="kontakt">
     <div class="row">
         <div class="col-md-5">
             <p>Nora Puh Lundberg<br>norapuh@gmail.com<br>+46 70 151 18 88</p>
-            <p>:-)</p>
         </div>
     </div>
 </div>
