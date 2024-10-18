@@ -1,126 +1,276 @@
 .navbar {
-            position: sticky;
-            top: 0;
-            background-color: white;
+    position: sticky;
+    top: 0;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Centering both sides */
+    padding: 5px 30px;
+    width: 100%;
+    z-index: 1000;
+}
+
+.navbar .header-namn, .navbar .nav-links a {
+    font-size: 16px;
+    font-family: 'Helvetica neue', sans-serif;
+    color: black;
+    text-decoration: none;
+    padding: 10px 0;
+}
+
+.navbar .nav-links {
+    display: flex;
+    gap: 30px;
+}
+
+
+@media (max-width: 768px) {
+    .navbar {
+        padding: 10px 20px;
+    }
+    .navbar .header-namn, .navbar .nav-links a {
+        font-size: 14px;
+    }
+    .mobilpadding {
+                padding-bottom: 2rem;
+            }
+
+    .video-container {
+        width: 100%;
+        padding-bottom: 56.25%; /* Keep 16:9 ratio */
+    }
+}
+
+/* General row styling with margin */
+.row {
+    margin: 2% 5% 5% 5%;
+}
+
+h1 {
+    font-family: "Helvetica neue", sans-serif;
+    font-size: 50px;
+    color: black;
+}
+
+h2 {
+    font-family: "Helvetica neue", sans-serif;
+    font-size: 36px;
+    color: black;
+}
+
+h4 {
+    font-family: "Helvetixa neue", sans-serif;
+}
+
+p {
+    font-family: "Helvetica neue", sans-serif;
+    font-size: 15px;
+    color: black;
+}
+
+body {
+    background-color: white;
+}
+
+.kontakt-dark {
+    background-color: #f4f2ed;
+    padding: 3% 0;
+    font-size: 26px;
+}
+
+.kontakt-light {
+    padding: 3% 0;
+    font-size: 26px;
+}
+
+.block {
+    padding-top: 7%;
+    padding-bottom: 7%;
+}
+
+.dark {
+    background-color: #f4f2ed;
+}
+
+.image-container {
+    width: 100%; /* Kolumnens fulla bredd */
+    height: 100%; /* Anpassa höjden till kolumnens innehåll */
+    display: flex;
+    justify-content: center; /* Centrerar bilden horisontellt i kolumnen */
+    align-items: center;     /* Centrerar bilden vertikalt i kolumnen om höjden ökas */
+}
+
+.image-container img {
+    max-width: 100%; /* Bildens bredd anpassas till kolumnen */
+    height: auto;    /* Behåller proportionerna */
+    object-fit: cover; /* Bilden anpassar sig och fyller utrymmet */
+}
+
+
+.logo {
+            width: 40%; /* Kolumnens fulla bredd */
+            height: 40%; /* Anpassa höjden till kolumnens innehåll */
             display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 5px 30px;
+            justify-content: center; /* Centrerar bilden horisontellt i kolumnen */
+            align-items: center;     /* Centrerar bilden vertikalt i kolumnen om höjden ökas */
+            margin-bottom: 40px;
+        }
+
+.business {
+    font-size: 14px;
+    color: gray;
+}
+
+
+         /* Video */
+         .video-thumbnail {
+            position: relative;
+            cursor: pointer;
+            overflow: hidden;
+        }
+
+        .video-thumbnail img {
             width: 100%;
-            z-index: 1000;
+            height: auto;
         }
 
-        .navbar .header-namn, .navbar .nav-links a {
-            font-size: 16px;
-            font-family: 'Helvetica neue', sans-serif;
-            color: #0c171d;
-            text-decoration: none;
-            padding: 10px 0;
-        }
-
-        .navbar .nav-links {
-            display: flex;
-            gap: 30px;
-        }
-
-
-        @media (max-width: 768px) {
-            .navbar {
-                padding: 10px 20px;
-            }
-            .navbar .header-namn, .navbar .nav-links a {
-                font-size: 14px;
-            }
-            .mobilpadding {
-                padding-bottom: 10px;
-            }
-
-            .intro {
-                font-family: "Helvetica neue", sans-serif;
-                font-size: 24px;
-                color: "#0c171d";
-                padding-top: 40px;
-            }
-        }
-
-        .block {
-            padding-top: 7%;
-            padding-bottom: 7%;
-        }
-
-        .row {
-        margin: 2% 5%;
-        }
-
-        h1 {
-            font-family: "Helvetica neue", sans-serif;
-            font-size: 100px;
-            color: #0c171d;
-            line-height: 1;  /* Sätt ett fast radavstånd */
-            display: flex;
-            align-items: flex-start;
-        }
-
-        h2 {
-            font-family: "Helvetica neue", sans-serif;
-            font-size: 36px;
-            color: "#0c171d";
-        }
-
-        h3 {
-            font-family: "Helvetica neue", sans-serif;
-            color: "#0c171d";
-        }
-
-        p {
-            font-family: "helvetica neue", sans-serif;
-            font-size: 15px;
-            color: #0c171d;
-        }
-
-        .intro {
-            font-size: 28px;
-            font-family: "helvetica neue", sans-serif;
-            color: #0c171d;
-            font-weight: 500;
-            line-height: 1.3;
-        }
-
-        body {
-            background-color: white;
-        }
-
-        .outro {
-            font-size: 28px;
-            font-family: "helvetica neue", sans-serif;
-            background-color: #0c171d;
+        .play-button {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 48px;
             color: white;
-            font-weight: 500;
-            line-height: 1.3;
+            opacity: 0.8;
+        }
 
+        .modal-content {
+            border: none;
+            background-color: transparent;
+        }
+
+        .modal-header {
+            border-bottom: none;
+            padding: 0.5rem;
+            display: flex;
+            justify-content: flex-end;
+        }
+
+        .modal-dialog {
+            max-width: 720px;
+        }
+
+        .modal-backdrop {
+            background-color: rgba(0, 0, 0, 0.7);
+        }
+
+        .btn-close {
+            font-size: 24px;
+            color: white;
+            background: none;
+            border: none;
+            outline: none;
+        }
+
+        .modal-body iframe {
+            border: none;
+            width: 100%;
+            height: 720px; /* Increase height for 9:16 video */
+        }
+
+        .modal-body2 iframe {
+            border: none; /* Remove iframe borders */
+            width: 100%;
+            height: 500px; /* Adjust height as needed */
         }
 
 
-        .image-container {
+        .jobbplugg {
+            padding: 0% 5%;
+        }
+
+        .jobbpluggsektion {
+            margin-top: 40px;
+        }
+
+        a {
+            color: black;
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: purple;
+        }
+
+        .om {
+            padding: 35px;
+        }
+
+        .usp-block {
+            background-color: #f4f2ed;
+            color: black;
+            padding-top: 6%;
+            padding-bottom: 10%;
+
+        }
+
+        .usp-box {
+            background-color: #faf8f2;
+            color: black;
+            padding: 10px;
+            border-radius: 5px;
+            margin-bottom: 5px;
+        }
+
+        .usp-box2 {
+            background-color: #f7f8fc;
+            color: black;
+            padding: 10px;
+            border-radius: 5px;
+            margin-bottom: 5px;
+        }
+
+        .VHS {
+            width: 70%;
+            transition: width 0.3s ease;
+            margin-top: 20px;
+        }
+
+        .VHS2 {
+            width: 70%;
+            transition: width 0.3s ease;
+            margin-top: 20px;
+        }
+
+        .VHS:hover {
+            width: 75%; /* Expands to 100% on hover */
+            transform: rotate(0.5deg); /* Slight rotation of 3 degrees */
+            transition: transform 0.3s ease, width 0.3s ease;
+        }
+
+        .VHS2:hover {
+            width: 75%; /* Expands to 100% on hover */
+            transform: rotate(-0.5deg); /* Slight rotation of 3 degrees */
+            transition: transform 0.3s ease, width 0.3s ease;
+        }
+
+
+        .video-container {
+            position: relative;
+            width: 70%;
+            height: 0;
+            padding-bottom: 56.25%; /* 16:9 aspect ratio */
+            margin: 0 auto;
+        }
+
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
             width: 100%;
             height: 100%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
         }
 
-        .image-container img {
-            max-width: 100%;
-            height: auto; 
-            object-fit: cover;
-        }
-
-        /* Kontaktsektion styling */
-        .kontakt {
-            background-color: #0c171d;
-            padding: 5% 0;
-        }
-
-        .kontakt p {
-            color: white;
+        .video-row {
+            margin-bottom: 2rem;
         }
