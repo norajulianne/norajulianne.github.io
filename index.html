@@ -9,155 +9,20 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
     <style>
-        /* Navigation bar styling */
-       .navbar {
-            position: sticky;
-            top: 0;
-            background-color: white;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 5px 30px;
-            width: 100%;
-            z-index: 1000;
-        }
-        
-        .navbar .header-namn, .navbar .nav-links a {
-            font-size: 16px;
-            font-family: 'Helvetica neue', sans-serif;
-            color: black;
-            text-decoration: none;
-            padding: 10px 0;
-        }
-        
-        .navbar .nav-links {
-            display: flex;
-            gap: 30px;
-        }
-        
-        
-        @media (max-width: 768px) {
-            .navbar {
-                padding: 10px 20px;
-            }
-            .navbar .header-namn, .navbar .nav-links a {
-                font-size: 14px;
-            }
-            .mobilpadding {
-                        padding-bottom: 10px;
-                    }
-        }
-
-        /* General styling */
-        h1, h2, p {
-            font-family: "Helvetica neue", sans-serif;
-            color: black;
-        }
-
-        h1 {
-            font-size: 100px;
-        }
-
-        h2 {
-            font-size: 36px;
-        }
-
-        p {
-            font-size: 16px;
-        }
-
-        body {
-            background-color: white;
-        }
-
-        /* Block section styling */
-        .block {
-            margin-top: 6%;
-            margin-bottom: 10%;
-        }
-
-        /* Row styling with preserved margins */
-        .row {
-            margin: 2% 5%;
-        }
-
-        .image-container {
-            width: 100%;
-        }
-
-        /* Kontaktsektion styling */
-        .kontakt {
-            background-color: #2F343C;
-            padding: 5% 0;
-        }
-
-        .kontakt p {
-            color: white;
-        }
-
-        /* Video styling */
-        .video-container {
-            position: relative;
-            width: 70%;
-            height: 0;
-            padding-bottom: 56.25%; /* 16:9 aspect ratio */
-            margin: 0 auto;
-        }
-
-        .video-container iframe {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-        }
-
-        @media (max-width: 768px) {
-            .video-container {
-                width: 100%;
-                padding-bottom: 56.25%; /* Keep 16:9 ratio */
-            }
-        }
-
-            .VHS {
-            width: 70%;
-            transition: width 0.3s ease;
-            margin-top: 20px;
-        }
-
-        .VHS2 {
-            width: 70%;
-            transition: width 0.3s ease;
-            margin-top: 20px;
-        }
-
-        .VHS:hover {
-            width: 75%; /* Expands to 100% on hover */
-            transform: rotate(0.5deg); /* Slight rotation of 3 degrees */
-            transition: transform 0.3s ease, width 0.3s ease;
-        }
-
-        .VHS2:hover {
-            width: 75%; /* Expands to 100% on hover */
-            transform: rotate(-0.5deg); /* Slight rotation of 3 degrees */
-            transition: transform 0.3s ease, width 0.3s ease;
-        }
-
-    
-
     </style>
 </head>
 <body>
 
     <!-- Navigation Bar -->
-  <div class="navbar">
-    <div class="header-namn">Nora Lundberg</div> <!-- Första delen -->
-    <div class="nav-links"> <!-- Länkarna -->
-        <a href="https://noralundberg.se/om">Om</a>
-        <a href="content.html">Content</a>
+    <div class="navbar">
+        <div class="header-namn">Nora Lundberg</div> <!-- Första delen -->
+        <div class="nav-links"> <!-- Länkarna -->
+            <a href="https://noralundberg.se/om">Om</a>
+            <div class ="header-namn" style="text-decoration: underline;">Content</div>
+        </div>
     </div>
-</div>
 
     <!-- Video Section with Vimeo Video -->
     <div class="row">
@@ -181,13 +46,13 @@
                 </a>
             </div>
             <div class="col-md-4">
-                <a href="https://noralundberg.se/sverigesradio#sr">
-                    <img src="srklister2.png" alt="Image 2" class="VHS2">
+                <a href="https://noralundberg.se/sverigesradio#musikhjalpen">
+                    <img src="musikhjalpenklister.png" alt="Image 4" class="VHS2">
                 </a>
             </div>
             <div class="col-md-4">
-                <a href="https://noralundberg.se/swiftcourt">
-                    <img src="swcklister2.png" alt="Image 6" class="VHS">
+                <a href="https://noralundberg.se/sproud">
+                    <img src="kaffeklister.png" alt="Image 3" class="VHS">
                 </a>
             </div>
         </div>
@@ -198,24 +63,23 @@
                 </a>
             </div>
             <div class="col-md-4">
-                <a href="https://noralundberg.se/sverigesradio#musikhjalpen">
-                    <img src="musikhjalpenklister.png" alt="Image 4" class="VHS">
+                <a href="https://noralundberg.se/sverigesradio#sr">
+                    <img src="srklister2.png" alt="Image 2" class="VHS">
                 </a>
             </div>
             <div class="col-md-4">
-                <a href="https://noralundberg.se/sproud">
-                    <img src="kaffeklister.png" alt="Image 3" class="VHS2">
+                <a href="Sproud.html">
+                    <img src="swiftcourt lapp.png" alt="Image 6" class="VHS2">
                 </a>
             </div>
         </div>
      </div>
 
     <!-- Kontaktsektion -->
-    <div class="kontakt" id="kontakt">
+    <div class="kontakt-light" id="kontakt-dark">
         <div class="row">
             <div class="col-md-5">
-                <p>Nora Julianne Puh Lundberg<br>norapuh@gmail.com<br>+46 70 151 18 88</p>
-                <p>:-)</p>
+                <p>Nora Puh Lundberg<br>norapuh@gmail.com<br>+46 70 151 18 88</p>
             </div>
         </div>
     </div>
