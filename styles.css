@@ -204,10 +204,6 @@ body {
             text-decoration: none;
         }
 
-        a:hover {
-            color: purple;
-        }
-
         .om {
             padding: 35px;
         }
