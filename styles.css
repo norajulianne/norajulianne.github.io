@@ -204,6 +204,10 @@ body {
             text-decoration: none;
         }
 
+a:hover {
+  background-color: black;
+}
+
         .om {
             padding: 35px;
         }
